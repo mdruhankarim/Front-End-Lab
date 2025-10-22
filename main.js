@@ -119,11 +119,6 @@ function initializeAnimations() {
             delay: 0.6
         });
         
-        // Note: Removed hero__content GSAP animation to avoid conflict with AOS (data-aos="fade-up")
-        // The hero content will be animated by AOS instead
-        
-        // Note: Removed feature-card GSAP animation to avoid conflict with AOS scroll animations
-        // Feature cards use data-aos attributes and will be animated by AOS on scroll
     }
 }
 

@@ -284,8 +284,6 @@ body {
 /* ===== HERO SECTION ===== */
 .hero {
     position: relative;
-    /* Use min-height so fixed header doesn't overlap content and allow smaller screens to scroll
-       subtract a reasonable header height so content stays visible under the fixed header */
     min-height: 100vh;
     padding-top: 72px;
     display: flex;
@@ -343,7 +341,7 @@ body {
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, rgba(37, 99, 235, 0.65), rgba(16, 185, 129, 0.45));
-    z-index: 2; /* sits above the background image but below the content (hero__container z-index:3) */
+    z-index: 2; 
 }
 
 /* ===== PAGE HEADER ===== */
