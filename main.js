@@ -53,9 +53,13 @@ function initializeNavigation() {
         link.addEventListener('click', function() {
             if (navMenu.classList.contains('show')) {
                 navMenu.classList.remove('show');
-                const icon = navToggle.querySelector('i');
-                icon.classList.add('fa-bars');
-                icon.classList.remove('fa-times');
+                if (navToggle) {
+                    const icon = navToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.add('fa-bars');
+                        icon.classList.remove('fa-times');
+                    }
+                }
             }
         });
     });
@@ -115,29 +119,11 @@ function initializeAnimations() {
             delay: 0.6
         });
         
-        // Hero content animation
-        gsap.from('.hero__content', {
-            y: 50,
-            opacity: 0,
-            duration: 1,
-            ease: 'power2.out',
-            delay: 0.8
-        });
+        // Note: Removed hero__content GSAP animation to avoid conflict with AOS (data-aos="fade-up")
+        // The hero content will be animated by AOS instead
         
-        // Feature cards animation
-        gsap.from('.feature-card', {
-            y: 30,
-            opacity: 0,
-            duration: 0.8,
-            ease: 'power2.out',
-            stagger: 0.2,
-            scrollTrigger: {
-                trigger: '.features',
-                start: 'top 80%',
-                end: 'bottom 20%',
-                toggleActions: 'play none none reverse'
-            }
-        });
+        // Note: Removed feature-card GSAP animation to avoid conflict with AOS scroll animations
+        // Feature cards use data-aos attributes and will be animated by AOS on scroll
     }
 }
 
@@ -196,14 +182,18 @@ function initializeScrollAnimations() {
             once: true,
             duration: 800,
             easing: 'ease-out-cubic',
-            offset: 100,
-            delay: 100,
+            offset: 50,
+            delay: 0,
             anchorPlacement: 'top-bottom',
-            disable: function() {
-                // Disable AOS on mobile for better performance
-                return window.innerWidth < 768;
-            }
+            disable: false, // Enable on all screen sizes
+            startEvent: 'DOMContentLoaded',
+            mirror: false
         });
+        
+        // Refresh AOS to catch any dynamically loaded content
+        setTimeout(() => {
+            AOS.refresh();
+        }, 100);
     }
     
     // ScrollReveal Initialization
@@ -444,8 +434,9 @@ function validateField(field) {
     return isValid;
 }
 
-function updatePasswordStrength() {
-    const password = this.value;
+function updatePasswordStrength(e) {
+    // Support being called as an event handler (preferred) or directly with input element
+    const password = e && e.target ? e.target.value : (typeof e === 'string' ? e : document.getElementById('password')?.value || '');
     const strengthFill = document.querySelector('.strength-fill');
     const strengthText = document.querySelector('.strength-text');
     
