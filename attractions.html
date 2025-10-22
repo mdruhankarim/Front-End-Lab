@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractions - Travel Paradise</title>
+    
+    <!-- Framework CSS Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__container">
+                <div class="nav__logo">
+                    <i class="fas fa-globe-americas brand"></i>
+                    <span class="brand-text">Travel Paradise</span>
+                </div>
+                <ul class="nav__menu" id="nav-menu">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="attractions.html" class="nav__link active">Attractions</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="register.html" class="nav__link">Register</a>
+                    </li>
+                </ul>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title animate__animated animate__fadeInDown">Amazing Attractions</h1>
+            <p class="page-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+                Discover the world's most incredible destinations and experiences
+            </p>
+        </div>
+    </section>
+
+    <!-- Attractions Grid -->
+    <section class="attractions">
+        <div class="container">
+            <div class="attractions__grid">
+                <div class="attraction-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="attraction-image">
+                        <img src="assets/images/attraction-1.jpg" alt="Ancient Temple" loading="lazy">
+                        <div class="attraction-overlay">
+                            <button class="btn btn--primary btn--ripple attraction-btn" data-attraction="temple">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3>Ancient Temple</h3>
+                        <p>Explore the mystical beauty of ancient temples with rich historical significance.</p>
+                        <div class="attraction-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.9/5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="attraction-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="attraction-image">
+                        <img src="assets/images/attraction-2.jpg" alt="Mountain Peak" loading="lazy">
+                        <div class="attraction-overlay">
+                            <button class="btn btn--primary btn--ripple attraction-btn" data-attraction="mountain">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3>Mountain Peak</h3>
+                        <p>Conquer breathtaking mountain peaks and enjoy panoramic views from the summit.</p>
+                        <div class="attraction-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.8/5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="attraction-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="attraction-image">
+                        <img src="assets/images/attraction-3.jpg" alt="Tropical Island" loading="lazy">
+                        <div class="attraction-overlay">
+                            <button class="btn btn--primary btn--ripple attraction-btn" data-attraction="island">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3>Tropical Island</h3>
+                        <p>Relax on pristine tropical islands with crystal clear waters and white sand beaches.</p>
+                        <div class="attraction-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.9/5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="attraction-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="attraction-image">
+                        <img src="assets/images/attraction-4.jpg" alt="Desert Oasis" loading="lazy">
+                        <div class="attraction-overlay">
+                            <button class="btn btn--primary btn--ripple attraction-btn" data-attraction="oasis">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3>Desert Oasis</h3>
+                        <p>Discover hidden oases in the desert with lush vegetation and refreshing waters.</p>
+                        <div class="attraction-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.7/5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="attraction-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="attraction-image">
+                        <img src="assets/images/attraction-5.jpg" alt="Forest Trail" loading="lazy">
+                        <div class="attraction-overlay">
+                            <button class="btn btn--primary btn--ripple attraction-btn" data-attraction="forest">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3>Forest Trail</h3>
+                        <p>Hike through enchanting forest trails surrounded by ancient trees and wildlife.</p>
+                        <div class="attraction-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.8/5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="attraction-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="attraction-image">
+                        <img src="assets/images/attraction-6.jpg" alt="Waterfall" loading="lazy">
+                        <div class="attraction-overlay">
+                            <button class="btn btn--primary btn--ripple attraction-btn" data-attraction="waterfall">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="attraction-content">
+                        <h3>Majestic Waterfall</h3>
+                        <p>Witness the power and beauty of cascading waterfalls in pristine natural settings.</p>
+                        <div class="attraction-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.9/5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-controls" data-aos="fade-up">
+                <h3>Filter Attractions</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="nature">Nature</button>
+                    <button class="filter-btn" data-filter="culture">Culture</button>
+                    <button class="filter-btn" data-filter="adventure">Adventure</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="attraction-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <h2 id="modal-title">Attraction Details</h2>
+                <div id="modal-content">
+                    <p>Loading attraction details...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>Travel Paradise</h3>
+                    <p>Making your travel dreams come true with exceptional service and unforgettable experiences.</p>
+                </div>
+                <div class="footer__section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="attractions.html">Attractions</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> info@travelparadise.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Travel Paradise. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Framework JS Links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Custom Script -->
+    <script src="main.js"></script>
+</body>
+</html>

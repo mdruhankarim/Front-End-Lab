@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Travel Paradise</title>
+    
+    <!-- Framework CSS Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__container">
+                <div class="nav__logo">
+                    <i class="fas fa-globe-americas brand"></i>
+                    <span class="brand-text">Travel Paradise</span>
+                </div>
+                <ul class="nav__menu" id="nav-menu">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="attractions.html" class="nav__link">Attractions</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="register.html" class="nav__link active">Register</a>
+                    </li>
+                </ul>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title animate__animated animate__fadeInDown">Join Our Community</h1>
+            <p class="page-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+                Create your account and start planning your next adventure
+            </p>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="registration">
+        <div class="container">
+            <div class="registration__container">
+                <div class="registration__form-wrapper" data-aos="fade-up">
+                    <form class="registration__form" id="registration-form" novalidate>
+                        <h2 class="form-title">Create Account</h2>
+                        
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user input-icon"></i>
+                                <input type="text" id="firstName" name="firstName" required>
+                                <div class="input-feedback"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user input-icon"></i>
+                                <input type="text" id="lastName" name="lastName" required>
+                                <div class="input-feedback"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-envelope input-icon"></i>
+                                <input type="email" id="email" name="email" required>
+                                <div class="input-feedback"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-phone input-icon"></i>
+                                <input type="tel" id="phone" name="phone">
+                                <div class="input-feedback"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password *</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-lock input-icon"></i>
+                                <input type="password" id="password" name="password" required>
+                                <button type="button" class="password-toggle" id="password-toggle">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <div class="input-feedback"></div>
+                            </div>
+                            <div class="password-strength" id="password-strength">
+                                <div class="strength-bar">
+                                    <div class="strength-fill"></div>
+                                </div>
+                                <span class="strength-text">Password strength</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password *</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-lock input-icon"></i>
+                                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                                <div class="input-feedback"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="birthDate">Date of Birth</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-calendar input-icon"></i>
+                                <input type="date" id="birthDate" name="birthDate">
+                                <div class="input-feedback"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-globe input-icon"></i>
+                                <select id="country" name="country">
+                                    <option value="">Select Country</option>
+                                    <option value="US">United States</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="UK">United Kingdom</option>
+                                    <option value="AU">Australia</option>
+                                    <option value="DE">Germany</option>
+                                    <option value="FR">France</option>
+                                    <option value="JP">Japan</option>
+                                    <option value="KR">South Korea</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="input-feedback"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <span class="checkmark"></span>
+                                I agree to the <a href="#" class="link">Terms of Service</a> and <a href="#" class="link">Privacy Policy</a> *
+                            </label>
+                            <div class="input-feedback"></div>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for travel updates and special offers
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--ripple btn--full">
+                            <span class="btn-text">Create Account</span>
+                            <div class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                Creating Account...
+                            </div>
+                        </button>
+
+                        <div class="form-message" id="form-message"></div>
+                    </form>
+                </div>
+
+                <div class="registration__benefits" data-aos="fade-left" data-aos-delay="200">
+                    <h3>Why Register?</h3>
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-percent"></i>
+                            <div>
+                                <h4>Exclusive Deals</h4>
+                                <p>Get access to member-only discounts and early bird offers.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Save Favorites</h4>
+                                <p>Bookmark your favorite destinations and create custom itineraries.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-bell"></i>
+                            <div>
+                                <h4>Travel Alerts</h4>
+                                <p>Receive notifications about price drops and new destinations.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-headset"></i>
+                            <div>
+                                <h4>24/7 Support</h4>
+                                <p>Get priority customer support for all your travel needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>Travel Paradise</h3>
+                    <p>Making your travel dreams come true with exceptional service and unforgettable experiences.</p>
+                </div>
+                <div class="footer__section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="attractions.html">Attractions</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> info@travelparadise.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Travel Paradise. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Framework JS Links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Custom Script -->
+    <script src="main.js"></script>
+</body>
+</html>

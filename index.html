@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Paradise - Discover Amazing Destinations</title>
+    
+    <!-- Framework CSS Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__container">
+                <div class="nav__logo">
+                    <i class="fas fa-globe-americas brand"></i>
+                    <span class="brand-text">Travel Paradise</span>
+                </div>
+                <ul class="nav__menu" id="nav-menu">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="attractions.html" class="nav__link">Attractions</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="register.html" class="nav__link">Register</a>
+                    </li>
+                </ul>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__container">
+            <div class="hero__content" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="hero__title animate__animated animate__fadeInDown">
+                    Discover Amazing Destinations
+                </h1>
+                <p class="hero__description animate__animated animate__fadeInUp animate__delay-1s">
+                    Explore the world's most beautiful places and create unforgettable memories
+                </p>
+                <button class="btn btn--primary btn--ripple animate__animated animate__pulse animate__delay-2s">
+                    Start Your Journey
+                </button>
+            </div>
+        </div>
+        <div class="hero__background">
+            <img src="assets/images/hero-bg.jpg" alt="Beautiful landscape" class="hero__bg-image">
+        </div>
+    </section>
+
+    <!-- Image Slider Section -->
+    <section class="slider-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Destinations</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="assets/images/destination-1.jpg" alt="Mountain Paradise">
+                            <div class="slide-overlay">
+                                <h3>Mountain Paradise</h3>
+                                <p>Experience breathtaking mountain views</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="assets/images/destination-2.jpg" alt="Tropical Beach">
+                            <div class="slide-overlay">
+                                <h3>Tropical Beach</h3>
+                                <p>Relax on pristine white sand beaches</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="assets/images/destination-3.jpg" alt="Historic City">
+                            <div class="slide-overlay">
+                                <h3>Historic City</h3>
+                                <p>Discover rich cultural heritage</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="assets/images/destination-4.jpg" alt="Desert Adventure">
+                            <div class="slide-overlay">
+                                <h3>Desert Adventure</h3>
+                                <p>Explore vast desert landscapes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="assets/images/destination-5.jpg" alt="Forest Retreat">
+                            <div class="slide-overlay">
+                                <h3>Forest Retreat</h3>
+                                <p>Connect with nature in lush forests</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Why Choose Us</h2>
+            <div class="features__grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safe & Secure</h3>
+                    <p>Your safety is our top priority with 24/7 support and secure booking.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Best Prices</h3>
+                    <p>Competitive pricing with no hidden fees and flexible payment options.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Premium Experience</h3>
+                    <p>Curated experiences and luxury accommodations for unforgettable trips.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter__content" data-aos="zoom-in">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for the latest travel deals and destination guides.</p>
+                <form class="newsletter__form" id="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn--secondary btn--ripple">Subscribe</button>
+                    </div>
+                    <div class="form-message" id="newsletter-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>Travel Paradise</h3>
+                    <p>Making your travel dreams come true with exceptional service and unforgettable experiences.</p>
+                </div>
+                <div class="footer__section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="attractions.html">Attractions</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> info@travelparadise.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Travel Paradise. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Framework JS Links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Custom Script -->
+    <script src="main.js"></script>
+</body>
+</html>
